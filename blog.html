@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Crossover Latam</title>
+  <meta name="description" content="Análisis, historias y contexto del mundo del deporte. Fútbol, NBA, Fórmula 1 y tenis explicados a fondo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">CROSS<span>OVER</span></a>
+      <div class="nav-links">
+        <a href="index.html#deportes">Deportes</a>
+        <a href="index.html#noticias">Noticias</a>
+        <a href="blog.html">Blog</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="index.html#newsletter" class="nav-cta">Suscríbete</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="wrap">
+      <span class="hero-tag">Blog</span>
+      <h1>Análisis y <em>contexto</em></h1>
+      <p class="lead">Historias, análisis y todo lo que hay detrás de las noticias del deporte.</p>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <section>
+    <div class="wrap">
+
+      <!-- Filtros -->
+      <div class="blog-filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="futbol">Fútbol</button>
+        <button class="filter-btn" data-filter="nba">NBA</button>
+        <button class="filter-btn" data-filter="f1">Fórmula 1</button>
+        <button class="filter-btn" data-filter="tenis">Tenis</button>
+      </div>
+
+      <!-- Artículos (de ejemplo — los reemplazas con los tuyos) -->
+      <div class="blog-grid">
+        <article class="blog-card" data-sport="futbol">
+          <div class="blog-thumb news-thumb t1"><span class="tag">Fútbol</span></div>
+          <div class="blog-body">
+            <h3>Título del artículo de fútbol va aquí</h3>
+            <p>Un resumen corto del artículo que invite a leer más. Aquí va la bajada o introducción.</p>
+            <time>28 de mayo, 2026</time>
+          </div>
+        </article>
+
+        <article class="blog-card" data-sport="nba">
+          <div class="blog-thumb news-thumb t2"><span class="tag">NBA</span></div>
+          <div class="blog-body">
+            <h3>Título del artículo de NBA va aquí</h3>
+            <p>Un resumen corto del artículo que invite a leer más. Aquí va la bajada o introducción.</p>
+            <time>27 de mayo, 2026</time>
+          </div>
+        </article>
+
+        <article class="blog-card" data-sport="f1">
+          <div class="blog-thumb news-thumb t3"><span class="tag">Fórmula 1</span></div>
+          <div class="blog-body">
+            <h3>Título del artículo de F1 va aquí</h3>
+            <p>Un resumen corto del artículo que invite a leer más. Aquí va la bajada o introducción.</p>
+            <time>26 de mayo, 2026</time>
+          </div>
+        </article>
+
+        <article class="blog-card" data-sport="tenis">
+          <div class="blog-thumb news-thumb t4"><span class="tag">Tenis</span></div>
+          <div class="blog-body">
+            <h3>Título del artículo de tenis va aquí</h3>
+            <p>Un resumen corto del artículo que invite a leer más. Aquí va la bajada o introducción.</p>
+            <time>25 de mayo, 2026</time>
+          </div>
+        </article>
+
+        <article class="blog-card" data-sport="futbol">
+          <div class="blog-thumb news-thumb t5"><span class="tag">Fútbol</span></div>
+          <div class="blog-body">
+            <h3>Otro título de artículo de fútbol</h3>
+            <p>Un resumen corto del artículo que invite a leer más. Aquí va la bajada o introducción.</p>
+            <time>24 de mayo, 2026</time>
+          </div>
+        </article>
+
+        <article class="blog-card" data-sport="nba">
+          <div class="blog-thumb news-thumb t6"><span class="tag">NBA</span></div>
+          <div class="blog-body">
+            <h3>Otro título de artículo de NBA</h3>
+            <p>Un resumen corto del artículo que invite a leer más. Aquí va la bajada o introducción.</p>
+            <time>23 de mayo, 2026</time>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="newsletter">
+    <div class="wrap">
+      <div class="nl-box">
+        <h2>No te pierdas nada</h2>
+        <p>Recibe cada semana el resumen deportivo en tu correo. Las noticias que importan, sin ruido.</p>
+        <div class="nl-form">
+          <input type="email" id="nl-email" placeholder="Tu correo electrónico" aria-label="Correo electrónico">
+          <button class="btn btn-primary" id="nl-btn">Suscribirme</button>
+        </div>
+        <div class="nl-msg" id="nl-msg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a href="index.html" class="logo">CROSS<span>OVER</span></a>
+          <p>El deporte bien contado ⚡</p>
+        </div>
+        <div class="foot-col">
+          <h5>Deportes</h5>
+          <a href="futbol.html">Fútbol</a>
+          <a href="nba.html">NBA</a>
+          <a href="formula1.html">Fórmula 1</a>
+          <a href="tenis.html">Tenis</a>
+        </div>
+        <div class="foot-col">
+          <h5>Crossover</h5>
+          <a href="sobre-nosotros.html">Sobre nosotros</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="foot-col">
+          <h5>Síguenos</h5>
+          <a href="https://instagram.com/CrossoverLatam" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/CrossoverLatam" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://x.com/CrossoverLatam" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <div class="foot-bottom">© 2026 Crossover Latam. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
