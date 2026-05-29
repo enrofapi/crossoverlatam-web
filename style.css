@@ -287,3 +287,37 @@ footer { background: var(--g900); border-top: 1px solid var(--g700); padding: 60
   .foot-grid { grid-template-columns: 1fr; }
   .featured-body { padding: 28px; }
 }
+
+/* ===================================================
+   IDENTIDAD DE MARCA — Logo, animación y lenguaje visual
+   (integrado desde el brand identity de Crossover)
+   =================================================== */
+
+/* ─── EL CRUCE — Logo mark ─────────────── */
+.logo { gap: 9px; }
+.logo-mark { width: 26px; height: 26px; flex-shrink: 0; display: block; }
+.logo-mark .l-lime  { stroke: var(--lime); }
+.logo-mark .l-white { stroke: var(--white); }
+.foot-brand .logo-mark { width: 32px; height: 32px; }
+
+/* ─── HERO — Logo animado (se dibuja solo) ─── */
+.hero-mark {
+  width: clamp(64px, 9vw, 108px);
+  height: clamp(64px, 9vw, 108px);
+  margin-bottom: 26px;
+  opacity: 0; animation: rise .6s ease forwards;
+}
+.hero-mark svg { width: 100%; height: 100%; display: block; }
+.hl1, .hl2 { stroke-dasharray: 130; stroke-dashoffset: 130; }
+.hl1 { stroke: var(--lime);  animation: draw .55s cubic-bezier(.4,0,.2,1) .35s forwards; }
+.hl2 { stroke: var(--white); animation: draw .55s cubic-bezier(.4,0,.2,1) .75s forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+
+/* ─── LA DIAGONAL — separador / acento de velocidad ─── */
+.diagonal-sep {
+  height: 70px; position: relative; overflow: hidden;
+  background: var(--g900); border-top: 1px solid var(--g700); border-bottom: 1px solid var(--g700);
+}
+.diagonal-sep .sp-bar {
+  position: absolute; top: -24px; bottom: -24px; transform: rotate(-22deg);
+}
