@@ -294,7 +294,7 @@ footer { background: var(--g900); border-top: 1px solid var(--g700); padding: 60
    =================================================== */
 
 /* ─── EL CRUCE — Logo mark ─────────────── */
-.logo { gap: 9px; }
+.logo { gap: 0px; }
 .logo-mark { width: 26px; height: 26px; flex-shrink: 0; display: block; }
 .logo-mark .l-lime  { stroke: var(--lime); }
 .logo-mark .l-white { stroke: var(--white); }
