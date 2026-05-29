@@ -181,10 +181,26 @@ section { padding: 90px 0; }
 .news-card { background: var(--g900); border: 1px solid var(--g700); border-radius: 8px; overflow: hidden; transition: transform .25s, border-color .25s; cursor: pointer; }
 .news-card:hover { transform: translateY(-4px); border-color: var(--g500); }
 .news-thumb { height: 160px; display: flex; align-items: flex-end; padding: 14px; }
-.news-thumb.t1, .news-thumb.t5 { background: linear-gradient(160deg, rgba(0,85,255,.4), var(--g900)); }
-.news-thumb.t2, .news-thumb.t6 { background: linear-gradient(160deg, rgba(255,76,27,.4), var(--g900)); }
-.news-thumb.t3 { background: linear-gradient(160deg, rgba(255,18,55,.4), var(--g900)); }
-.news-thumb.t4 { background: linear-gradient(160deg, rgba(197,255,0,.35), var(--g900)); }
+.news-thumb.t1, .news-thumb.t5 {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.2) 100%),
+    url('futbol.jpg') center/cover no-repeat;
+}
+.news-thumb.t2, .news-thumb.t6 {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.2) 100%),
+    url('nba.jpg') center/cover no-repeat;
+}
+.news-thumb.t3 {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.2) 100%),
+    url('formula1.jpg') center/cover no-repeat;
+}
+.news-thumb.t4 {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.2) 100%),
+    url('tenis.jpg') center/cover no-repeat;
+}
 .tag { font-family: var(--fm); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 9px; border-radius: 3px; background: rgba(8,8,8,.7); color: var(--white); backdrop-filter: blur(4px); }
 .news-body { padding: 18px; }
 .news-body h4 { font-family: var(--fd); font-weight: 600; font-size: 1.35rem; line-height: 1.08; margin-bottom: 8px; }
