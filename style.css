@@ -207,6 +207,26 @@ section { padding: 90px 0; }
 .sport-card.f1::after { background: var(--f1); }
 .sport-card.tenis::after { background: var(--tenis); }
 .sport-card.futbol:hover { border-color: var(--futbol); }
+.sport-card.futbol {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.25) 100%),
+    url('futbol.jpg') center/cover no-repeat;
+}
+.sport-card.nba {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.25) 100%),
+    url('nba.jpg') center/cover no-repeat;
+}
+.sport-card.f1 {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.25) 100%),
+    url('formula1.jpg') center/cover no-repeat;
+}
+.sport-card.tenis {
+  background:
+    linear-gradient(135deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.25) 100%),
+    url('tenis.jpg') center/cover no-repeat;
+}
 .sport-card.nba:hover { border-color: var(--nba); }
 .sport-card.f1:hover { border-color: var(--f1); }
 .sport-card.tenis:hover { border-color: var(--tenis); }
