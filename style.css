@@ -267,6 +267,16 @@ footer { background: var(--g900); border-top: 1px solid var(--g700); padding: 60
 .foot-col h5 { font-family: var(--fd); font-weight: 700; text-transform: uppercase; font-size: 1.1rem; letter-spacing: 1px; margin-bottom: 16px; color: var(--white); }
 .foot-col a { display: block; color: var(--g400); text-decoration: none; margin-bottom: 10px; font-size: .98rem; transition: color .2s; }
 .foot-col a:hover { color: var(--lime); }
+.beta-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: var(--g500);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: rise .7s ease .05s forwards;
+}
 .foot-bottom { border-top: 1px solid var(--g700); padding-top: 24px; text-align: center; font-family: var(--fm); font-size: 13px; color: var(--g500); }
 
 /* ─── RESPONSIVE ─────────────────────────────── */
